@@ -1,0 +1,7 @@
+<h1>Results for <%= pageTitle %></h1>
+
+<ul id="search-results">
+  <% for (result of recipe) { %>
+    <li><a href="/recipes/<%= result.idMeal %>"><%= result.strMeal %></a></li>
+  <% } %>
+</ul>
